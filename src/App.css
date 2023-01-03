@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1,
+h4 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  flex: 2;
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #1d2729;
+  border-radius: 5px;
+  border: none;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notes {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.instructions {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.instructions button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(42, 212, 147, 1) 50%, rgba(34, 193, 195, 1) 100%);
+  border-radius: 5px;
+}
+
+.instructions h4 {
+  margin: 10px 0;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.micro {
+  background-color: brown;
+  color: white;
+  padding: 7.5px;
+  border: 4px solid #fff100;
+  border-radius: 5px;
+}
+
+.prueba {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.dn {
+  margin: 50px 0px;
+}
+
+.td__first {
+  border: 2px solid rgb(34, 193, 195);
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(42, 212, 147, 1) 50%, rgba(34, 193, 195, 1) 100%);
+}
+
+.td {
+  background: linear-gradient(90deg, rgba(255, 12, 241, 1) 0%, rgba(250, 0, 135, 1) 100%);
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, rgba(255, 12, 241, 1) 0%, rgba(250, 0, 135, 1) 100%);
+  border-right: none;
+  border-left: none;
+}
+
+/* Usamos nth-child para variar el color del fondo de las tareas (4n + 1 => A partir de 1 y de 4 en 4 (1,5,9,etc.)) */
+
+.td:nth-child(4n + 1) {
+  background: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%);
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%);
+  border-right: none;
+  border-left: none;
+}
+
+.td:nth-child(4n + 2) {
+  background: linear-gradient(90deg, rgba(255, 118, 20, 1) 0%, rgba(255, 84, 17, 1) 100%);
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, rgba(255, 118, 20, 1) 0%, rgba(255, 84, 17, 1) 100%);
+  border-right: none;
+  border-left: none;
+}
+
+.td:nth-child(4n + 3) {
+  background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+  border-right: none;
+  border-left: none;
+}
+
+.td__text {
+  flex: 3;
+  text-align: left;
+  cursor: pointer;
+}
+
+.td--complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.td__div {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.td__icon {
+  color: white;
 }
