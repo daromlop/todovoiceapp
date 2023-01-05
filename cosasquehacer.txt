@@ -1,7 +1,0 @@
-1 --> Hacer APP responsive
-
-2 --> Intentar añadir tareas en LocalStorage
-
-3 --> Optimizar código
-
-4 --> Explicar código
