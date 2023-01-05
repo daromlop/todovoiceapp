@@ -12,8 +12,6 @@ const DisplayTasks = ({ savedNotes, setSavedNotes, updateState, setUpdateState }
 
   const selectedTask = useRef([]);
 
-  // https://stackoverflow.com/questions/66644991/react-map-useref-functional-component
-
   const completeTask = (id) => {
     savedNotes[id].complete = !savedNotes[id].complete;
     setUpdateState(!updateState);
@@ -42,7 +40,7 @@ const DisplayTasks = ({ savedNotes, setSavedNotes, updateState, setUpdateState }
   const deleteTask = (id) => {
     let savedNotesNew = savedNotes.filter(
       (name) => savedNotes.indexOf(name) !== id
-    ); /* Devuelve todos los elementos del array cuyo índice no coincida con el id que se le pasa */
+    );
 
     setSavedNotes(savedNotesNew);
   };
