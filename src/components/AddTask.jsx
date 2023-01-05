@@ -7,7 +7,7 @@ import { useRef } from "react";
 import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
 
 const AddTask = () => {
-  const [updateState, setUpdateState] = useState(false); // Se usa para forzar el render de la aplicación cuando el usuario cambia al modo edición en algunas de las tareas que tenga
+  const [updateState, setUpdateState] = useState(false); 
 
   const [savedNotes, setSavedNotes] = useState([]);
 
