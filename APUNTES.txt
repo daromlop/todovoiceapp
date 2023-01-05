@@ -1,9 +1,0 @@
-- Pasar imagen a icon en Material UI (IconButton) --> (27:21)
-
-- Extender propiedades de un componente de StyledComponents a otro --> (44:38)
-
-- Añadir box-shadow hacia dentro --> (50:12)
-
--  Props para cambiar css de un componente de Styled components --> (55:33)
-
-- Funcionalidad de reconocimiento de voz --> (1:15:00)
