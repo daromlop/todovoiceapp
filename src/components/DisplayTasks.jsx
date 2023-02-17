@@ -8,7 +8,6 @@ import MicOffIcon from "@mui/icons-material/MicOff";
 import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
 
 const DisplayTasks = ({ savedNotes, setSavedNotes, updateState, setUpdateState }) => {
-  const [isListeningEdit, setIsListeningEdit] = useState(false);
 
   const selectedTask = useRef([]);
 
@@ -48,7 +47,6 @@ const DisplayTasks = ({ savedNotes, setSavedNotes, updateState, setUpdateState }
   const microEdit = (id) => {
     savedNotes[id].isListeningEdit = !savedNotes[id].isListeningEdit;
     setUpdateState(!updateState);
-    setIsListeningEdit(!isListeningEdit);
     if (savedNotes[id].isListeningEdit) {
       SpeechRecognition.startListening();
     } else {
